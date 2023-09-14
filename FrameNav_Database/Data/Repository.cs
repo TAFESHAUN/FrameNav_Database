@@ -13,6 +13,7 @@ namespace FrameNav_Database.Data
     /// <summary>
     /// Repoistory for database connection -> Updates/Deletes/Inserts of New products
     /// Could use a reset DB feature
+    /// CRUD FEATURES
     /// </summary>
     public class Repository
     {
@@ -22,6 +23,7 @@ namespace FrameNav_Database.Data
         {
             //_connectionString = @"Data Source=DESKTOP-TBL2MHJ;Initial Catalog=StoreDB;Integrated Security=True";
             _connectionString = ConfigurationManager.ConnectionStrings["ShopConnect"].ConnectionString;
+            //_connectionString = ConfigurationManager.OpenMachineConfiguration <- default directories, browser options, win11 account -> PIN, Gesture, Facial Reg etc.
         }
         #endregion
 

@@ -38,7 +38,7 @@ namespace FrameNav_Database
         private void Button_Click_N(object sender, RoutedEventArgs e)
         {
             frame.Navigate(new View.frameTest(_repo));
-            Product prod = new Product;
+            //Products prod = new Products;
         }
     }
 }
