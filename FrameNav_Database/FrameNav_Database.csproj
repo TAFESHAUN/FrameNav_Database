@@ -4,7 +4,6 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net7.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <BaseOutputPath>C:\Users\User\Desktop\Desktop\TAFE SEMESTER 2 20222\OOP Programming\OOP_Workshops\Week 14\Week13-14-Databases\FrameNav_Database\FrameNav_Database\FrameNav_Database\bin</BaseOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
