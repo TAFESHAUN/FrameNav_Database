@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using FrameNav_Database.Data;
+
+namespace FrameNav_Database.View
+{
+    /// <summary>
+    /// Interaction logic for Delete.xaml
+    /// </summary>
+    public partial class Delete : Page
+    {
+        private Repository _repo;
+        public Delete(Repository repo, Products p)
+        {
+            _repo = repo;
+            InitializeComponent();
+            DataContext = p;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                _repo.DeleteProduct(DataContext as Products);
+                NavigationService.Navigate(new Index(_repo));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Index(_repo));
+        }
+    }
+}
