@@ -21,7 +21,7 @@ namespace FrameNav_Database.Data
         private string _connectionString;
         public Repository()
         {
-            //_connectionString = @"Data Source=DESKTOP-TBL2MHJ;Initial Catalog=StoreDB;Integrated Security=True";
+            //_connectionString = @"Data Source=DESKTOP-FFSLR8G\SQLEXPRESS01;Initial Catalog=StoreDB;Integrated Security=True;"; //Trust Server Certificate=True
             _connectionString = ConfigurationManager.ConnectionStrings["ShopConnect"].ConnectionString;
             //_connectionString = ConfigurationManager.OpenMachineConfiguration <- default directories, browser options, win11 account -> PIN, Gesture, Facial Reg etc.
         }
