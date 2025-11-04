@@ -30,7 +30,7 @@ namespace FrameNav_Database
             frame.Navigate(new View.Index(_repo));
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e) //Insert Frame Change
         {
             frame.Navigate(new View.Insert(_repo));
         }
